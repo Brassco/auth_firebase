@@ -3,16 +3,17 @@ import {Button, Card, CardItem, InputWithLabel} from './common';
 
 class LoginForm extends Component {
     state = {
-        text: ''
+        email: ''
     }
     render() {
         return(
             <Card>
                 <CardItem>
                     <InputWithLabel
-                        label={'label for input'}
-                        value={this.state.text}
-                        onChangeText={text => this.setState({text: text})}
+                        placeholder={'test@mail.com'}
+                        label={'Email'}
+                        value={this.state.email}
+                        onChangeText={email => this.setState({email: email})}
                     />
                 </CardItem>
                 <CardItem>
