@@ -1,16 +1,22 @@
 import React, {Component} from 'react';
-import {TextInput} from 'react-native';
-import {Button, Card, CardItem} from './common';
+import {Button, Card, CardItem, InputWithLabel} from './common';
 
 class LoginForm extends Component {
+    state = {
+        text: ''
+    }
     render() {
         return(
             <Card>
                 <CardItem>
-                    <TextInput style={{height: 20, width: 50}}/>
+                    <InputWithLabel
+                        label={'label for input'}
+                        value={this.state.text}
+                        onChangeText={text => this.setState({text: text})}
+                    />
                 </CardItem>
                 <CardItem>
-                    <TextInput/>
+                    <InputWithLabel/>
                 </CardItem>
                 <CardItem>
                     <Button>
