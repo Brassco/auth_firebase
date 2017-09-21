@@ -4,3 +4,5 @@ export * from './Card';
 export * from './CardItem';
 export * from './CardHeader';
 export * from './InputWithLabel';
+export * from './ErrorText';
+export * from './Spiner';
