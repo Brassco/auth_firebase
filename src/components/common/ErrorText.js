@@ -5,7 +5,7 @@ const  ErrorText = (props) => {
     return (
         <View>
             <Text style={styles.errorTextStyle}>
-                {props.child}
+                {props.children}
             </Text>
         </View>
     )
